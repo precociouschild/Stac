@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+     
+
+        <Button
+            android:id="@+id/getCustom"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickImg"
+            android:text="사진입력1" />
+        
+         <Button
+            android:id="@+id/getCustom2"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickImg2"
+            android:text="사진입력2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/a12"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linear_layout"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imgView1"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             android:background="#abcd00"
+            android:src="@layout/test_sun_color" />
+
+        <ImageView
+            android:id="@+id/imgView2"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ff0000"
+            android:src="@layout/test_sun_color" />
+    </LinearLayout>
+<Button
+        android:id="@+id/btn_compose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/a12"
+        android:onClick="resultButton"
+        android:textSize="25dp"
+        android:text="합성 하기" />
+
+</RelativeLayout>
